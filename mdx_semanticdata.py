@@ -79,11 +79,11 @@ __version__ = "1.1"
 
 
 pattern = r"""
-\%\%\s*
+@@s*
     (?:((?P<namespace>\w+):)?(?P<rel>[^\%#]+?) \s* ::)? \s*
     (?P<target>.+?) \s*
     (?:\| \s* (?P<label>[^\]]+?) \s*)?
-\%\%
+@@
 """.strip()
 
 
